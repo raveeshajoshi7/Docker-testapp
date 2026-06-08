@@ -12,7 +12,7 @@ const client = new MongoClient(MONGO_URL);
 
 //GET all users
 app.get("/getUsers", async (req, res) => {
-    await client.connect(mongodb://admin:qwerty@localhost:27017);
+    await client.connect();
     console.log('Connected successfully to server');
 
     const db = client.db("apnacollege-db");
